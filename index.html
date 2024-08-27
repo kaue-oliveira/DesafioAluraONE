@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Criptografia - Alura ONE</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header>
+        <h1>Desafio de Criptografia</h1>
+        <p>Alura ONE - Oracle Next Education</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Insira o texto para criptografar ou descriptografar:</h2>
+            <textarea id="inputText" placeholder="Digite seu texto aqui..." rows="5"></textarea>
+            <div class="button-container">
+                <button id="encryptButton" class="button-primary">
+                    <i class="fas fa-lock"></i> Criptografar
+                </button>
+                <button id="decryptButton" class="button-secondary">
+                    <i class="fas fa-unlock"></i> Descriptografar
+                </button>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <h2>Resultado:</h2>
+            <textarea id="outputText" readonly rows="5"></textarea>
+            <button id="copyButton" class="button-copy">
+                <i class="far fa-copy"></i> Copiar
+            </button>
+        </section>
+    </main>
+
+    <aside class="frame5-container">
+        <div class="title">Criptografia</div>
+        <div class="subtitle">Digite um texto que você deseja criptografar ou descriptografar.</div>
+    </aside>
+
+    <footer>
+      <p>&copy; 2024 Pagina de Criptografia.</p>
+      <img src="image.png" alt="Descrição da Imagem" class="footer-image">
+      </footer>
+  
+
+    <script src="main.js"></script>
+</body>
+</html>

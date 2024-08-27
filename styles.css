@@ -1,0 +1,164 @@
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f5fc;
+  color: #0A3871;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0A3871;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #495057;
+}
+
+/* Conteúdo principal */
+main {
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #0A3871;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  resize: vertical;
+  min-height: 150px;
+  background-color: #f3f5fc;
+  color: #0A3871;
+}
+
+textarea:focus {
+  outline: 2px solid #0A3871;
+}
+
+/* Botões */
+.button-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-primary,
+.button-secondary,
+.button-copy {
+  padding: 16px 24px;
+  font-size: 1rem;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.button-primary {
+  background-color: #0A3871;
+  color: #FFFFFF;
+  border: none;
+}
+
+.button-primary:hover {
+  background-color: #072b5a;
+}
+
+.button-secondary,
+.button-copy {
+  background-color: #D8DFE8;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+}
+
+.button-secondary:hover,
+.button-copy:hover {
+  background-color: #b8c4d6;
+}
+
+/* Frame 5 Container */
+.frame5-container {
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.frame5-container .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0A3871;
+  margin-bottom: 16px;
+}
+
+.frame5-container .subtitle {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main,
+  .frame5-container {
+    padding: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-primary,
+  .button-secondary,
+  .button-copy {
+    width: 100%;
+  }
+}
+
+
